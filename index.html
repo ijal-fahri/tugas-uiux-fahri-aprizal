@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelompok 5 - Desain UI/UX &amp; Pemrograman Web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @media (min-width: 768px) {
+            #membersGrid > article:last-child:nth-child(odd) {
+                grid-column: 1 / -1;
+                width: calc(50% - 0.75rem);
+                justify-self: center;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-slate-50 font-sans text-slate-800">
+    <header class="border-b border-slate-200 bg-white px-4 py-8 text-center">
+        <div class="mx-auto max-w-7xl">
+            <i class="fa-solid fa-users text-3xl text-blue-600" aria-hidden="true"></i>
+            <h1 class="mt-2 text-3xl font-bold sm:text-4xl">Kelompok 5</h1>
+            <p class="mt-1 text-sm text-slate-600 sm:text-base">Desain UI/UX &amp; Pemrograman Web</p>
+        </div>
+    </header>
+
+    <main class="mx-auto max-w-7xl space-y-6 px-4 py-6 sm:px-6 lg:px-8">
+        <section class="flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-4 shadow-sm" aria-labelledby="intro-title">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-blue-50 text-xl text-blue-600">
+                <i class="fa-solid fa-users-viewfinder" aria-hidden="true"></i>
+            </div>
+            <div>
+                <h2 id="intro-title" class="font-bold">Intro</h2>
+                <p class="mt-1 text-sm text-slate-600">Kami adalah Kelompok 5 dari mata kuliah Desain UI/UX &amp; Pemrograman Web.</p>
+            </div>
+        </section>
+
+        <section id="membersGrid" class="grid grid-cols-1 gap-6 md:grid-cols-2" aria-label="Anggota Kelompok 5">
+            <article class="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+                <div class="flex flex-col gap-4 sm:flex-row">
+                    <img src="Anggota/4.jpeg" alt="Foto Faisal Febriansyah" class="h-44 w-full shrink-0 rounded-lg object-cover sm:w-36">
+                    <div class="min-w-0 flex-1">
+                        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-3">
+                            <h3 class="font-bold text-slate-900">Faisal Febriansyah</h3>
+                            <span class="rounded-full bg-blue-100 px-3 py-1 text-xs font-medium text-blue-700">Anggota Kelompok</span>
+                        </div>
+                        <dl class="mt-3 space-y-2 text-sm">
+                            <div class="grid grid-cols-[7rem_0.75rem_1fr] gap-1"><dt class="text-slate-500">NIM</dt><dd>:</dd><dd>0110226019</dd></div>
+                            <div class="grid grid-cols-[7rem_0.75rem_1fr] gap-1"><dt class="text-slate-500">TTL</dt><dd>:</dd><dd>Cirebon, 20-02-2006</dd></div>
+                            <div class="grid grid-cols-[7rem_0.75rem_1fr] gap-1"><dt class="text-slate-500">Alamat</dt><dd>:</dd><dd>Susukan Lebak, Cirebon</dd></div>
+                            <div class="grid grid-cols-[7rem_0.75rem_1fr] gap-1"><dt class="text-slate-500">Prodi</dt><dd>:</dd><dd>Teknik Informatika</dd></div>
+                        </dl>
+                    </div>
+                </div>
+            </article>
+
+            <article class="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+                <div class="flex flex-col gap-4 sm:flex-row">
+                    <img src="Anggota/6.jpeg" alt="Foto Fahri Aprizal" class="h-44 w-full shrink-0 rounded-lg object-cover sm:w-36">
+                    <div class="min-w-0 flex-1">
+                        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-3">
+                            <h3 class="font-bold text-slate-900">Fahri Aprizal</h3>
+                            <span class="rounded-full bg-purple-100 px-3 py-1 text-xs font-medium text-purple-700">Anggota Kelompok</span>
+                        </div>
+                        <dl class="mt-3 space-y-2 text-sm">
+                            <div class="grid grid-cols-[7rem_0.75rem_1fr] gap-1"><dt class="text-slate-500">NIM</dt><dd>:</dd><dd>0110226113</dd></div>
+                            <div class="grid grid-cols-[7rem_0.75rem_1fr] gap-1"><dt class="text-slate-500">TTL</dt><dd>:</dd><dd>Bogor, 17-03-2008</dd></div>
+                            <div class="grid grid-cols-[7rem_0.75rem_1fr] gap-1"><dt class="text-slate-500">Alamat</dt><dd>:</dd><dd>Dramaga, Bogor</dd></div>
+                            <div class="grid grid-cols-[7rem_0.75rem_1fr] gap-1"><dt class="text-slate-500">Prodi</dt><dd>:</dd><dd>Teknik Informatika</dd></div>
+                        </dl>
+                    </div>
+                </div>
+            </article>
+
+            <article class="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+                <div class="flex flex-col gap-4 sm:flex-row">
+                    <img src="Anggota/2.jpeg" alt="Foto Fikri Aqsa Robain" class="h-44 w-full shrink-0 rounded-lg object-cover sm:w-36">
+                    <div class="min-w-0 flex-1">
+                        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-3">
+                            <h3 class="font-bold text-slate-900">Fikri Aqsa Robain</h3>
+                            <span class="rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700">Anggota Kelompok</span>
+                        </div>
+                        <dl class="mt-3 space-y-2 text-sm">
+                            <div class="grid grid-cols-[7rem_0.75rem_1fr] gap-1"><dt class="text-slate-500">NIM</dt><dd>:</dd><dd>0110226125</dd></div>
+                            <div class="grid grid-cols-[7rem_0.75rem_1fr] gap-1"><dt class="text-slate-500">TTL</dt><dd>:</dd><dd>Depok, 16-02-2008</dd></div>
+                            <div class="grid grid-cols-[7rem_0.75rem_1fr] gap-1"><dt class="text-slate-500">Alamat</dt><dd>:</dd><dd>Pancoran Mas, Depok</dd></div>
+                            <div class="grid grid-cols-[7rem_0.75rem_1fr] gap-1"><dt class="text-slate-500">Prodi</dt><dd>:</dd><dd>Teknik Informatika</dd></div>
+                        </dl>
+                    </div>
+                </div>
+            </article>
+
+            <article class="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+                <div class="flex flex-col gap-4 sm:flex-row">
+                    <img src="Anggota/3.jpeg" alt="Foto Fitri Rahma" class="h-44 w-full shrink-0 rounded-lg object-cover sm:w-36">
+                    <div class="min-w-0 flex-1">
+                        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-3">
+                            <h3 class="font-bold text-slate-900">Fitri Rahma</h3>
+                            <span class="rounded-full bg-amber-100 px-3 py-1 text-xs font-medium text-amber-700">Anggota Kelompok</span>
+                        </div>
+                        <dl class="mt-3 space-y-2 text-sm">
+                            <div class="grid grid-cols-[7rem_0.75rem_1fr] gap-1"><dt class="text-slate-500">NIM</dt><dd>:</dd><dd>0110226134</dd></div>
+                            <div class="grid grid-cols-[7rem_0.75rem_1fr] gap-1"><dt class="text-slate-500">TTL</dt><dd>:</dd><dd>Sape, 26-01-2009</dd></div>
+                            <div class="grid grid-cols-[7rem_0.75rem_1fr] gap-1"><dt class="text-slate-500">Alamat</dt><dd>:</dd><dd>NTB, Bima, Sape</dd></div>
+                            <div class="grid grid-cols-[7rem_0.75rem_1fr] gap-1"><dt class="text-slate-500">Prodi</dt><dd>:</dd><dd>Teknik Informatika</dd></div>
+                        </dl>
+                    </div>
+                </div>
+            </article>
+
+            <article class="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+                <div class="flex flex-col gap-4 sm:flex-row">
+                    <img src="Anggota/5.jpeg" alt="Foto Fatih Abdullah Azzam" class="h-44 w-full shrink-0 rounded-lg object-cover sm:w-36">
+                    <div class="min-w-0 flex-1">
+                        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-3">
+                            <h3 class="font-bold text-slate-900">Fatih Abdullah Azzam</h3>
+                            <span class="rounded-full bg-rose-100 px-3 py-1 text-xs font-medium text-rose-700">Anggota Kelompok</span>
+                        </div>
+                        <dl class="mt-3 space-y-2 text-sm">
+                            <div class="grid grid-cols-[7rem_0.75rem_1fr] gap-1"><dt class="text-slate-500">NIM</dt><dd>:</dd><dd>0110226186</dd></div>
+                            <div class="grid grid-cols-[7rem_0.75rem_1fr] gap-1"><dt class="text-slate-500">TTL</dt><dd>:</dd><dd>Jakarta, 12-10-2006</dd></div>
+                            <div class="grid grid-cols-[7rem_0.75rem_1fr] gap-1"><dt class="text-slate-500">Alamat</dt><dd>:</dd><dd>Ciracas, Jakarta Timur</dd></div>
+                            <div class="grid grid-cols-[7rem_0.75rem_1fr] gap-1"><dt class="text-slate-500">Prodi</dt><dd>:</dd><dd>Teknik Informatika</dd></div>
+                        </dl>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
